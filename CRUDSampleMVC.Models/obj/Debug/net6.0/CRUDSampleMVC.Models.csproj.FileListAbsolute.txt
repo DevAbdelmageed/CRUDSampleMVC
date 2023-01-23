@@ -1,0 +1,12 @@
+C:\Users\DEVOPSolution\source\repos\CRUDSampleMVC\CRUDSampleMVC.Models\obj\Debug\net6.0\CRUDSampleMVC.Models.csproj.AssemblyReference.cache
+C:\Users\DEVOPSolution\source\repos\CRUDSampleMVC\CRUDSampleMVC.Models\obj\Debug\net6.0\CRUDSampleMVC.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DEVOPSolution\source\repos\CRUDSampleMVC\CRUDSampleMVC.Models\obj\Debug\net6.0\CRUDSampleMVC.Models.AssemblyInfoInputs.cache
+C:\Users\DEVOPSolution\source\repos\CRUDSampleMVC\CRUDSampleMVC.Models\obj\Debug\net6.0\CRUDSampleMVC.Models.AssemblyInfo.cs
+C:\Users\DEVOPSolution\source\repos\CRUDSampleMVC\CRUDSampleMVC.Models\obj\Debug\net6.0\CRUDSampleMVC.Models.csproj.CoreCompileInputs.cache
+C:\Users\DEVOPSolution\source\repos\CRUDSampleMVC\CRUDSampleMVC.Models\bin\Debug\net6.0\CRUDSampleMVC.Models.deps.json
+C:\Users\DEVOPSolution\source\repos\CRUDSampleMVC\CRUDSampleMVC.Models\bin\Debug\net6.0\CRUDSampleMVC.Models.dll
+C:\Users\DEVOPSolution\source\repos\CRUDSampleMVC\CRUDSampleMVC.Models\bin\Debug\net6.0\CRUDSampleMVC.Models.pdb
+C:\Users\DEVOPSolution\source\repos\CRUDSampleMVC\CRUDSampleMVC.Models\obj\Debug\net6.0\CRUDSampleMVC.Models.dll
+C:\Users\DEVOPSolution\source\repos\CRUDSampleMVC\CRUDSampleMVC.Models\obj\Debug\net6.0\refint\CRUDSampleMVC.Models.dll
+C:\Users\DEVOPSolution\source\repos\CRUDSampleMVC\CRUDSampleMVC.Models\obj\Debug\net6.0\CRUDSampleMVC.Models.pdb
+C:\Users\DEVOPSolution\source\repos\CRUDSampleMVC\CRUDSampleMVC.Models\obj\Debug\net6.0\ref\CRUDSampleMVC.Models.dll

@@ -1,23 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using CRUDSampleMVC.Models;
 using System.Globalization;
+using CRUDSampleMVC.Models.Models.UnitOfWork;
+//using CRUDSampleMVC.Models.Service;
 
 namespace CRUDSampleMVC.Controllers
 {
     public class CategoriesController : Controller
     {
-        private readonly CDRUDContext _context;
+        private readonly IUnitOfWork _unitOfWork;
+        //private readonly CategoryService _categoryService;
+
 
         #region Constructer 
-        public CategoriesController(CDRUDContext context)
+        public CategoriesController(IUnitOfWork unitOfWork)
         {
-            _context = context;
+            //_categoryService = categoryService;
+            _unitOfWork = unitOfWork;
         }
         #endregion
 
@@ -25,19 +25,19 @@ namespace CRUDSampleMVC.Controllers
         public async Task<IActionResult> Index()
         {
             Thread.CurrentThread.CurrentUICulture = new CultureInfo("Ar-Eg");
-            return View(await _context.Category.ToListAsync());
+            return View(await _unitOfWork.Categories.GetAllAsync() );
+            //return View(await _categoryService.GetAllAsync() );
         }
 
         // GET: Categories/Details/5
         public async Task<IActionResult> Details(int? id)
         {
-            if (id == null || _context.Category == null)
+            if(id == null)
             {
                 return NotFound();
             }
 
-            var category = await _context.Category
-                .FirstOrDefaultAsync(m => m.Id == id);
+            var category = await _unitOfWork.Categories.GetByIdAsync((int)id);
             if (category == null)
             {
                 return NotFound();
@@ -61,8 +61,9 @@ namespace CRUDSampleMVC.Controllers
         {
             if (ModelState.IsValid)
             {
-                _context.Add(category);
-                await _context.SaveChangesAsync();
+                _unitOfWork.Categories.Add(category);
+
+                await _unitOfWork.CompleteAsync();
                 return RedirectToAction(nameof(Index));
             }
             return View(category);
@@ -71,12 +72,12 @@ namespace CRUDSampleMVC.Controllers
         // GET: Categories/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
-            if (id == null || _context.Category == null)
+            if (id == null )
             {
                 return NotFound();
             }
 
-            var category = await _context.Category.FindAsync(id);
+            var category = await _unitOfWork.Categories.FindAsync(c=> c.Id == (int)id);
             if (category == null)
             {
                 return NotFound();
@@ -100,8 +101,8 @@ namespace CRUDSampleMVC.Controllers
             {
                 try
                 {
-                    _context.Update(category);
-                    await _context.SaveChangesAsync();
+                    _unitOfWork.Categories.Update(category);
+                    await _unitOfWork.CompleteAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
@@ -122,13 +123,12 @@ namespace CRUDSampleMVC.Controllers
         // GET: Categories/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
-            if (id == null || _context.Category == null)
+            if (id == null )
             {
                 return NotFound();
             }
 
-            var category = await _context.Category
-                .FirstOrDefaultAsync(m => m.Id == id);
+            var category = await _unitOfWork.Categories.FindAsync(m => m.Id == id);
             if (category == null)
             {
                 return NotFound();
@@ -142,23 +142,20 @@ namespace CRUDSampleMVC.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            if (_context.Category == null)
-            {
-                return Problem("Entity set 'CDRUDContext.Category'  is null.");
-            }
-            var category = await _context.Category.FindAsync(id);
+           
+            var category = await _unitOfWork.Categories.FindAsync(c => c.Id ==id );
             if (category != null)
             {
-                _context.Category.Remove(category);
+                _unitOfWork.Categories.Delete(category);
             }
             
-            await _context.SaveChangesAsync();
+            await _unitOfWork.CompleteAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool CategoryExists(int id)
         {
-          return _context.Category.Any(e => e.Id == id);
+          return _unitOfWork.Categories.Find(e => e.Id == id) != null;
         }
     }
 }

@@ -1,4 +1,5 @@
 using CRUDSampleMVC.Models;
+using CRUDSampleMVC.Models.Models.UnitOfWork;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -9,6 +10,7 @@ builder.Services.AddControllersWithViews();
 // Context 
 builder.Services.AddDbContext<CDRUDContext>( options => 
    options.UseSqlServer(builder.Configuration.GetConnectionString("DBConnectionStrings"))  );
+
 
 var app = builder.Build();
 
