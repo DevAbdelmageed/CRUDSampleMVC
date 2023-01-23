@@ -18,7 +18,6 @@ namespace CRUDSampleMVC.Controllers
         public IActionResult Index()
 
         {
-            Thread.CurrentThread.CurrentUICulture = new CultureInfo("Ar-Eg");
 
             return View();
         }
@@ -33,10 +32,9 @@ namespace CRUDSampleMVC.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
-        public ActionResult ChangeLanguage(string lang)
-        {
-            new LanguageMang().SetLanguage(lang);
-            return RedirectToAction("Index", "Home");
-        }
+         public ActionResult ChangeLanguage(string lang) {    
+            new LanguageMang().SetLanguage(lang);    
+            return RedirectToAction("Index", "Home");    
+        }  
     }
 }

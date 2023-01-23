@@ -15,7 +15,7 @@ namespace CRUDSampleMVC.Helpers
                 },
                
                 new Languages {
-                    LanguageFullName = "arabic", LanguageCultureName = "Ar"
+                    LanguageFullName = "arabic", LanguageCultureName = "ar"
                 },
             };
         public static bool IsLanguageAvailable(string lang)
@@ -32,6 +32,8 @@ namespace CRUDSampleMVC.Helpers
             {
                 if (!IsLanguageAvailable(lang)) lang = GetDefaultLanguage();
                 var cultureInfo = new CultureInfo(lang);
+                Thread.CurrentThread.CurrentUICulture = cultureInfo;
+
                 Thread.CurrentThread.CurrentUICulture = cultureInfo;
                 Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture(cultureInfo.Name);
                 //HttpCookie langCookie = new HttpCookie("culture", lang);
