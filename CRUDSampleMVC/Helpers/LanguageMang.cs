@@ -34,7 +34,6 @@ namespace CRUDSampleMVC.Helpers
                 var cultureInfo = new CultureInfo(lang);
                 Thread.CurrentThread.CurrentUICulture = cultureInfo;
 
-                Thread.CurrentThread.CurrentUICulture = cultureInfo;
                 Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture(cultureInfo.Name);
                 //HttpCookie langCookie = new HttpCookie("culture", lang);
                 //langCookie.Expires = DateTime.Now.AddYears(1);

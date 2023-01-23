@@ -20,8 +20,8 @@
           "CRUDSampleMVC.dll": {}
         },
         "resources": {
-          "Ar/CRUDSampleMVC.resources.dll": {
-            "locale": "Ar"
+          "ar/CRUDSampleMVC.resources.dll": {
+            "locale": "ar"
           }
         }
       },

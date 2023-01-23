@@ -97,6 +97,15 @@ namespace CRUDSampleMVC.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Category Details.
+        /// </summary>
+        public static string CategoryDetails {
+            get {
+                return ResourceManager.GetString("CategoryDetails", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Create.
         /// </summary>
         public static string Create {
@@ -111,6 +120,33 @@ namespace CRUDSampleMVC.Resources {
         public static string Date {
             get {
                 return ResourceManager.GetString("Date", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Delete.
+        /// </summary>
+        public static string Delete {
+            get {
+                return ResourceManager.GetString("Delete", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Are you sure you want to delete this?.
+        /// </summary>
+        public static string DeleteMSG {
+            get {
+                return ResourceManager.GetString("DeleteMSG", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Edit Category.
+        /// </summary>
+        public static string EditCategory {
+            get {
+                return ResourceManager.GetString("EditCategory", resourceCulture);
             }
         }
         
@@ -147,6 +183,15 @@ namespace CRUDSampleMVC.Resources {
         public static string Id {
             get {
                 return ResourceManager.GetString("Id", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to List Category.
+        /// </summary>
+        public static string ListCategory {
+            get {
+                return ResourceManager.GetString("ListCategory", resourceCulture);
             }
         }
         
