@@ -1,6 +1,8 @@
-﻿using CRUDSampleMVC.Models;
+﻿using CRUDSampleMVC.Helpers;
+using CRUDSampleMVC.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using System.Globalization;
 
 namespace CRUDSampleMVC.Controllers
 {
@@ -14,7 +16,10 @@ namespace CRUDSampleMVC.Controllers
         }
 
         public IActionResult Index()
+
         {
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo("Ar-Eg");
+
             return View();
         }
 
@@ -27,6 +32,11 @@ namespace CRUDSampleMVC.Controllers
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
+        public ActionResult ChangeLanguage(string lang)
+        {
+            new LanguageMang().SetLanguage(lang);
+            return RedirectToAction("Index", "Home");
         }
     }
 }

@@ -24,7 +24,7 @@ namespace CRUDSampleMVC.Controllers
         // GET: Categories
         public async Task<IActionResult> Index()
         {
-            Thread.CurrentThread.CurrentUICulture = new CultureInfo("Ar-Eg");
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo("ar");
             return View(await _unitOfWork.Categories.GetAllAsync() );
             //return View(await _categoryService.GetAllAsync() );
         }

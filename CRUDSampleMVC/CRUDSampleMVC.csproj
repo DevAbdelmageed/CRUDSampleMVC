@@ -23,8 +23,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="Resources\Resource.Ar-Eg.Designer.cs">
-      <DependentUpon>Resource.Ar-Eg.resx</DependentUpon>
+    <Compile Update="Resources\Resource.ar.Designer.cs">
+      <DependentUpon>Resource.ar.resx</DependentUpon>
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
     </Compile>
@@ -36,8 +36,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="Resources\Resource.Ar-Eg.resx">
-      <LastGenOutput>Resource.Ar-Eg.Designer.cs</LastGenOutput>
+    <EmbeddedResource Update="Resources\Resource.ar.resx">
+      <LastGenOutput>Resource.ar.Designer.cs</LastGenOutput>
       <Generator>PublicResXFileCodeGenerator</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Resources\Resource.resx">

@@ -1,6 +1,5 @@
 C:\Users\DEVOPSolution\source\repos\CRUDSampleMVC\CRUDSampleMVC\obj\Debug\net6.0\CRUDSampleMVC.csproj.AssemblyReference.cache
 C:\Users\DEVOPSolution\source\repos\CRUDSampleMVC\CRUDSampleMVC\obj\Debug\net6.0\CRUDSampleMVC.Resources.Resource.resources
-C:\Users\DEVOPSolution\source\repos\CRUDSampleMVC\CRUDSampleMVC\obj\Debug\net6.0\CRUDSampleMVC.Resources.Resource.Ar-Eg.resources
 C:\Users\DEVOPSolution\source\repos\CRUDSampleMVC\CRUDSampleMVC\obj\Debug\net6.0\CRUDSampleMVC.csproj.GenerateResource.cache
 C:\Users\DEVOPSolution\source\repos\CRUDSampleMVC\CRUDSampleMVC\obj\Debug\net6.0\CRUDSampleMVC.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\DEVOPSolution\source\repos\CRUDSampleMVC\CRUDSampleMVC\obj\Debug\net6.0\CRUDSampleMVC.AssemblyInfoInputs.cache
@@ -17,7 +16,6 @@ C:\Users\DEVOPSolution\source\repos\CRUDSampleMVC\CRUDSampleMVC\bin\Debug\net6.0
 C:\Users\DEVOPSolution\source\repos\CRUDSampleMVC\CRUDSampleMVC\bin\Debug\net6.0\CRUDSampleMVC.runtimeconfig.json
 C:\Users\DEVOPSolution\source\repos\CRUDSampleMVC\CRUDSampleMVC\bin\Debug\net6.0\CRUDSampleMVC.dll
 C:\Users\DEVOPSolution\source\repos\CRUDSampleMVC\CRUDSampleMVC\bin\Debug\net6.0\CRUDSampleMVC.pdb
-C:\Users\DEVOPSolution\source\repos\CRUDSampleMVC\CRUDSampleMVC\bin\Debug\net6.0\Ar-Eg\CRUDSampleMVC.resources.dll
 C:\Users\DEVOPSolution\source\repos\CRUDSampleMVC\CRUDSampleMVC\bin\Debug\net6.0\Humanizer.dll
 C:\Users\DEVOPSolution\source\repos\CRUDSampleMVC\CRUDSampleMVC\bin\Debug\net6.0\MessagePack.dll
 C:\Users\DEVOPSolution\source\repos\CRUDSampleMVC\CRUDSampleMVC\bin\Debug\net6.0\MessagePack.Annotations.dll
@@ -258,7 +256,6 @@ C:\Users\DEVOPSolution\source\repos\CRUDSampleMVC\CRUDSampleMVC\bin\Debug\net6.0
 C:\Users\DEVOPSolution\source\repos\CRUDSampleMVC\CRUDSampleMVC\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\Users\DEVOPSolution\source\repos\CRUDSampleMVC\CRUDSampleMVC\bin\Debug\net6.0\CRUDSampleMVC.Models.dll
 C:\Users\DEVOPSolution\source\repos\CRUDSampleMVC\CRUDSampleMVC\bin\Debug\net6.0\CRUDSampleMVC.Models.pdb
-C:\Users\DEVOPSolution\source\repos\CRUDSampleMVC\CRUDSampleMVC\obj\Debug\net6.0\Ar-Eg\CRUDSampleMVC.resources.dll
 C:\Users\DEVOPSolution\source\repos\CRUDSampleMVC\CRUDSampleMVC\obj\Debug\net6.0\staticwebassets\msbuild.CRUDSampleMVC.Microsoft.AspNetCore.StaticWebAssets.props
 C:\Users\DEVOPSolution\source\repos\CRUDSampleMVC\CRUDSampleMVC\obj\Debug\net6.0\staticwebassets\msbuild.build.CRUDSampleMVC.props
 C:\Users\DEVOPSolution\source\repos\CRUDSampleMVC\CRUDSampleMVC\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.CRUDSampleMVC.props
@@ -285,3 +282,6 @@ C:\Users\DEVOPSolution\source\repos\CRUDSampleMVC\CRUDSampleMVC\bin\Debug\net6.0
 C:\Users\DEVOPSolution\source\repos\CRUDSampleMVC\CRUDSampleMVC\bin\Debug\net6.0\Unity.Abstractions.dll
 C:\Users\DEVOPSolution\source\repos\CRUDSampleMVC\CRUDSampleMVC\bin\Debug\net6.0\Unity.Container.dll
 C:\Users\DEVOPSolution\source\repos\CRUDSampleMVC\CRUDSampleMVC\bin\Debug\net6.0\Unity.Mvc5.dll
+C:\Users\DEVOPSolution\source\repos\CRUDSampleMVC\CRUDSampleMVC\bin\Debug\net6.0\ar\CRUDSampleMVC.resources.dll
+C:\Users\DEVOPSolution\source\repos\CRUDSampleMVC\CRUDSampleMVC\obj\Debug\net6.0\CRUDSampleMVC.Resources.Resource.ar.resources
+C:\Users\DEVOPSolution\source\repos\CRUDSampleMVC\CRUDSampleMVC\obj\Debug\net6.0\ar\CRUDSampleMVC.resources.dll

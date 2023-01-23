@@ -13,7 +13,7 @@
     <WebStackScaffolding_IsViewGenerationSelected>True</WebStackScaffolding_IsViewGenerationSelected>
   </PropertyGroup>
   <ItemGroup>
-    <EmbeddedResource Update="Resources\Resource.Ar-Eg.resx">
+    <EmbeddedResource Update="Resources\Resource.ar.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
