@@ -1,5 +1,9 @@
 using CRUDSampleMVC.Models;
+using CRUDSampleMVC.Models.IRepository.CategoryRep;
 using CRUDSampleMVC.Models.Models.UnitOfWork;
+using CRUDSampleMVC.Models.Repository.CategoryRep;
+using CRUDSampleMVC.Service.Iservices;
+using CRUDSampleMVC.Service.Services;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -10,6 +14,9 @@ builder.Services.AddControllersWithViews();
 // Context 
 builder.Services.AddDbContext<CDRUDContext>( options => 
    options.UseSqlServer(builder.Configuration.GetConnectionString("DBConnectionStrings"))  );
+
+builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
+builder.Services.AddScoped<ICategoryService, CategoryService>();
 
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 

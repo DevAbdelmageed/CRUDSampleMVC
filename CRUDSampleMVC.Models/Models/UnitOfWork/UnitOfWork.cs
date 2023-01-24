@@ -7,13 +7,13 @@ namespace CRUDSampleMVC.Models.Models.UnitOfWork
     {
         private readonly CDRUDContext _context;
 
-        public ICategoryRepository Categories { get; private set; }
+        //public ICategoryRepository Categories { get; private set; }
 
         public UnitOfWork(CDRUDContext context)
         {
             _context = context;
 
-            Categories = new CategoryRepository(_context);
+            //Categories = new CategoryRepository(_context);
         }
 
         public int Complete()

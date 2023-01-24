@@ -3,6 +3,10 @@ using Microsoft.EntityFrameworkCore;
 using CRUDSampleMVC.Models;
 using System.Globalization;
 using CRUDSampleMVC.Models.Models.UnitOfWork;
+using CRUDSampleMVC.Service.Services;
+using CRUDSampleMVC.Service.Iservices;
+using CRUDSampleMVC.Resources;
+using CRUDSampleMVC.Models.ViewModels.Category;
 //using CRUDSampleMVC.Models.Service;
 
 namespace CRUDSampleMVC.Controllers
@@ -10,13 +14,13 @@ namespace CRUDSampleMVC.Controllers
     public class CategoriesController : Controller
     {
         private readonly IUnitOfWork _unitOfWork;
-        //private readonly CategoryService _categoryService;
+        private readonly ICategoryService _categoryService;
 
 
         #region Constructer 
-        public CategoriesController(IUnitOfWork unitOfWork)
+        public CategoriesController(IUnitOfWork unitOfWork, ICategoryService categoryService)
         {
-            //_categoryService = categoryService;
+            _categoryService = categoryService;
             _unitOfWork = unitOfWork;
         }
         #endregion
@@ -25,19 +29,20 @@ namespace CRUDSampleMVC.Controllers
         public async Task<IActionResult> Index()
         {
             Thread.CurrentThread.CurrentUICulture = new CultureInfo("ar");
-            return View(await _unitOfWork.Categories.GetAllAsync() );
-            //return View(await _categoryService.GetAllAsync() );
+            //var cc = await _unitOfWork.Categories.GetAllAsync();
+            //return View( );
+            return View(await _categoryService.GetAllCategories());
         }
 
         // GET: Categories/Details/5
         public async Task<IActionResult> Details(int? id)
         {
-            if(id == null)
+            if (id == null)
             {
                 return NotFound();
             }
 
-            var category = await _unitOfWork.Categories.GetByIdAsync((int)id);
+            var category = await _categoryService.GetCategory((int)id);
             if (category == null)
             {
                 return NotFound();
@@ -57,11 +62,11 @@ namespace CRUDSampleMVC.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,ArabicName,EnglishName")] Category category)
+        public async Task<IActionResult> Create([Bind("Id,ArabicName,EnglishName")] CategoryPostVM category)
         {
             if (ModelState.IsValid)
             {
-                _unitOfWork.Categories.Add(category);
+                _categoryService.AddCategory(category);
 
                 await _unitOfWork.CompleteAsync();
                 return RedirectToAction(nameof(Index));
@@ -77,7 +82,7 @@ namespace CRUDSampleMVC.Controllers
                 return NotFound();
             }
 
-            var category = await _unitOfWork.Categories.FindAsync(c=> c.Id == (int)id);
+            var category = await _categoryService.GetCategory((int)id);
             if (category == null)
             {
                 return NotFound();
@@ -90,7 +95,7 @@ namespace CRUDSampleMVC.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,ArabicName,EnglishName")] Category category)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,ArabicName,EnglishName")] CategoryVM category)
         {
             if (id != category.Id)
             {
@@ -101,7 +106,7 @@ namespace CRUDSampleMVC.Controllers
             {
                 try
                 {
-                    _unitOfWork.Categories.Update(category);
+                    _categoryService.UpdateCategory(category);
                     await _unitOfWork.CompleteAsync();
                 }
                 catch (DbUpdateConcurrencyException)
@@ -128,13 +133,15 @@ namespace CRUDSampleMVC.Controllers
                 return NotFound();
             }
 
-            var category = await _unitOfWork.Categories.FindAsync(m => m.Id == id);
-            if (category == null)
-            {
-                return NotFound();
-            }
+            //var category = await _unitOfWork.Categories.FindAsync(m => m.Id == id);
+            //if (category == null)
+            //{
+            //    return NotFound();
+            //}
 
-            return View(category);
+            //return View(category);
+            return View();
+
         }
 
         // POST: Categories/Delete/5
@@ -142,20 +149,20 @@ namespace CRUDSampleMVC.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-           
-            var category = await _unitOfWork.Categories.FindAsync(c => c.Id ==id );
+
+            var category = await _categoryService.GetCategory(id);
             if (category != null)
             {
-                _unitOfWork.Categories.Delete(category);
+                _categoryService.DeleteCategory(category);
             }
-            
+
             await _unitOfWork.CompleteAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool CategoryExists(int id)
         {
-          return _unitOfWork.Categories.Find(e => e.Id == id) != null;
+            return _categoryService.CategoryExists(id);
         }
     }
 }

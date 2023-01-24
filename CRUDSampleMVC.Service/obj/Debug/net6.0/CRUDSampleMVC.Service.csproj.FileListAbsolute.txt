@@ -1,0 +1,15 @@
+C:\Users\DEVOPSolution\source\repos\CRUDSampleMVC\CRUDSampleMVC.Service\bin\Debug\net6.0\CRUDSampleMVC.Service.deps.json
+C:\Users\DEVOPSolution\source\repos\CRUDSampleMVC\CRUDSampleMVC.Service\bin\Debug\net6.0\CRUDSampleMVC.Service.dll
+C:\Users\DEVOPSolution\source\repos\CRUDSampleMVC\CRUDSampleMVC.Service\bin\Debug\net6.0\CRUDSampleMVC.Service.pdb
+C:\Users\DEVOPSolution\source\repos\CRUDSampleMVC\CRUDSampleMVC.Service\bin\Debug\net6.0\CRUDSampleMVC.Models.dll
+C:\Users\DEVOPSolution\source\repos\CRUDSampleMVC\CRUDSampleMVC.Service\bin\Debug\net6.0\CRUDSampleMVC.Models.pdb
+C:\Users\DEVOPSolution\source\repos\CRUDSampleMVC\CRUDSampleMVC.Service\obj\Debug\net6.0\CRUDSampleMVC.Service.csproj.AssemblyReference.cache
+C:\Users\DEVOPSolution\source\repos\CRUDSampleMVC\CRUDSampleMVC.Service\obj\Debug\net6.0\CRUDSampleMVC.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DEVOPSolution\source\repos\CRUDSampleMVC\CRUDSampleMVC.Service\obj\Debug\net6.0\CRUDSampleMVC.Service.AssemblyInfoInputs.cache
+C:\Users\DEVOPSolution\source\repos\CRUDSampleMVC\CRUDSampleMVC.Service\obj\Debug\net6.0\CRUDSampleMVC.Service.AssemblyInfo.cs
+C:\Users\DEVOPSolution\source\repos\CRUDSampleMVC\CRUDSampleMVC.Service\obj\Debug\net6.0\CRUDSampleMVC.Service.csproj.CoreCompileInputs.cache
+C:\Users\DEVOPSolution\source\repos\CRUDSampleMVC\CRUDSampleMVC.Service\obj\Debug\net6.0\CRUDSampleMVC.Service.csproj.CopyComplete
+C:\Users\DEVOPSolution\source\repos\CRUDSampleMVC\CRUDSampleMVC.Service\obj\Debug\net6.0\CRUDSampleMVC.Service.dll
+C:\Users\DEVOPSolution\source\repos\CRUDSampleMVC\CRUDSampleMVC.Service\obj\Debug\net6.0\refint\CRUDSampleMVC.Service.dll
+C:\Users\DEVOPSolution\source\repos\CRUDSampleMVC\CRUDSampleMVC.Service\obj\Debug\net6.0\CRUDSampleMVC.Service.pdb
+C:\Users\DEVOPSolution\source\repos\CRUDSampleMVC\CRUDSampleMVC.Service\obj\Debug\net6.0\ref\CRUDSampleMVC.Service.dll

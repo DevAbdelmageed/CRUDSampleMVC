@@ -20,6 +20,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CRUDSampleMVC.Models\CRUDSampleMVC.Models.csproj" />
+    <ProjectReference Include="..\CRUDSampleMVC.Service\CRUDSampleMVC.Service.csproj" />
   </ItemGroup>
 
   <ItemGroup>

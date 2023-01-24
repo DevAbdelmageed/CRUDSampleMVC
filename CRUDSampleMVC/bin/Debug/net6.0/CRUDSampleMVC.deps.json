@@ -9,6 +9,7 @@
       "CRUDSampleMVC/1.0.0": {
         "dependencies": {
           "CRUDSampleMVC.Models": "1.0.0",
+          "CRUDSampleMVC.Service": "1.0.0",
           "Microsoft.EntityFrameworkCore": "6.0.13",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.13",
           "Microsoft.EntityFrameworkCore.Tools": "6.0.13",
@@ -2345,6 +2346,14 @@
         "runtime": {
           "CRUDSampleMVC.Models.dll": {}
         }
+      },
+      "CRUDSampleMVC.Service/1.0.0": {
+        "dependencies": {
+          "CRUDSampleMVC.Models": "1.0.0"
+        },
+        "runtime": {
+          "CRUDSampleMVC.Service.dll": {}
+        }
       }
     }
   },
@@ -3601,6 +3610,11 @@
       "hashPath": "unity.mvc5.1.4.0.nupkg.sha512"
     },
     "CRUDSampleMVC.Models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CRUDSampleMVC.Service/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

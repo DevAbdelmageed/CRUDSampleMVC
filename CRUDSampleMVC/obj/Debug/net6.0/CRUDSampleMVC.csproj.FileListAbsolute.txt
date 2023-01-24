@@ -285,3 +285,5 @@ C:\Users\DEVOPSolution\source\repos\CRUDSampleMVC\CRUDSampleMVC\bin\Debug\net6.0
 C:\Users\DEVOPSolution\source\repos\CRUDSampleMVC\CRUDSampleMVC\bin\Debug\net6.0\ar\CRUDSampleMVC.resources.dll
 C:\Users\DEVOPSolution\source\repos\CRUDSampleMVC\CRUDSampleMVC\obj\Debug\net6.0\CRUDSampleMVC.Resources.Resource.ar.resources
 C:\Users\DEVOPSolution\source\repos\CRUDSampleMVC\CRUDSampleMVC\obj\Debug\net6.0\ar\CRUDSampleMVC.resources.dll
+C:\Users\DEVOPSolution\source\repos\CRUDSampleMVC\CRUDSampleMVC\bin\Debug\net6.0\CRUDSampleMVC.Service.dll
+C:\Users\DEVOPSolution\source\repos\CRUDSampleMVC\CRUDSampleMVC\bin\Debug\net6.0\CRUDSampleMVC.Service.pdb

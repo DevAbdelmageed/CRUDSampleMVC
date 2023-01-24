@@ -69,6 +69,65 @@
         }
       }
     },
+    "C:\\Users\\DEVOPSolution\\source\\repos\\CRUDSampleMVC\\CRUDSampleMVC.Service\\CRUDSampleMVC.Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\DEVOPSolution\\source\\repos\\CRUDSampleMVC\\CRUDSampleMVC.Service\\CRUDSampleMVC.Service.csproj",
+        "projectName": "CRUDSampleMVC.Service",
+        "projectPath": "C:\\Users\\DEVOPSolution\\source\\repos\\CRUDSampleMVC\\CRUDSampleMVC.Service\\CRUDSampleMVC.Service.csproj",
+        "packagesPath": "C:\\Users\\DEVOPSolution\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\DEVOPSolution\\source\\repos\\CRUDSampleMVC\\CRUDSampleMVC.Service\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\DEVOPSolution\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\DEVOPSolution\\source\\repos\\CRUDSampleMVC\\CRUDSampleMVC.Models\\CRUDSampleMVC.Models.csproj": {
+                "projectPath": "C:\\Users\\DEVOPSolution\\source\\repos\\CRUDSampleMVC\\CRUDSampleMVC.Models\\CRUDSampleMVC.Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\Users\\DEVOPSolution\\source\\repos\\CRUDSampleMVC\\CRUDSampleMVC\\CRUDSampleMVC.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -95,6 +154,9 @@
             "projectReferences": {
               "C:\\Users\\DEVOPSolution\\source\\repos\\CRUDSampleMVC\\CRUDSampleMVC.Models\\CRUDSampleMVC.Models.csproj": {
                 "projectPath": "C:\\Users\\DEVOPSolution\\source\\repos\\CRUDSampleMVC\\CRUDSampleMVC.Models\\CRUDSampleMVC.Models.csproj"
+              },
+              "C:\\Users\\DEVOPSolution\\source\\repos\\CRUDSampleMVC\\CRUDSampleMVC.Service\\CRUDSampleMVC.Service.csproj": {
+                "projectPath": "C:\\Users\\DEVOPSolution\\source\\repos\\CRUDSampleMVC\\CRUDSampleMVC.Service\\CRUDSampleMVC.Service.csproj"
               }
             }
           }

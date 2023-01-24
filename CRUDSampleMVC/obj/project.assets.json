@@ -3652,6 +3652,19 @@
         "runtime": {
           "bin/placeholder/CRUDSampleMVC.Models.dll": {}
         }
+      },
+      "CRUDSampleMVC.Service/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "CRUDSampleMVC.Models": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CRUDSampleMVC.Service.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CRUDSampleMVC.Service.dll": {}
+        }
       }
     }
   },
@@ -10255,11 +10268,17 @@
       "type": "project",
       "path": "../CRUDSampleMVC.Models/CRUDSampleMVC.Models.csproj",
       "msbuildProject": "../CRUDSampleMVC.Models/CRUDSampleMVC.Models.csproj"
+    },
+    "CRUDSampleMVC.Service/1.0.0": {
+      "type": "project",
+      "path": "../CRUDSampleMVC.Service/CRUDSampleMVC.Service.csproj",
+      "msbuildProject": "../CRUDSampleMVC.Service/CRUDSampleMVC.Service.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "CRUDSampleMVC.Models >= 1.0.0",
+      "CRUDSampleMVC.Service >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 6.0.13",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.13",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.13",
@@ -10297,6 +10316,9 @@
           "projectReferences": {
             "C:\\Users\\DEVOPSolution\\source\\repos\\CRUDSampleMVC\\CRUDSampleMVC.Models\\CRUDSampleMVC.Models.csproj": {
               "projectPath": "C:\\Users\\DEVOPSolution\\source\\repos\\CRUDSampleMVC\\CRUDSampleMVC.Models\\CRUDSampleMVC.Models.csproj"
+            },
+            "C:\\Users\\DEVOPSolution\\source\\repos\\CRUDSampleMVC\\CRUDSampleMVC.Service\\CRUDSampleMVC.Service.csproj": {
+              "projectPath": "C:\\Users\\DEVOPSolution\\source\\repos\\CRUDSampleMVC\\CRUDSampleMVC.Service\\CRUDSampleMVC.Service.csproj"
             }
           }
         }
